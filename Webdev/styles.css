@@ -1,0 +1,364 @@
+*{
+    font-family: 'montserrat';
+    font-weight: 500;
+    /* background-color: black; */
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+body{
+    background-color: black;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+.sidebar{
+    width: 340px;
+    border-radius: 1rem;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    background-color: #121212;
+}
+
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem ;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    padding: 0.5rem 0.75rem;
+    margin-right: 0.5rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    background-color: #121212;
+    opacity: 0.7;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.nav-option i{
+    font-size: 1.2rem;
+    background-color: #121212;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+
+ .library{
+    border-radius: 10px;
+    height: 31rem;
+    background-color: #121212;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem ;
+ }
+ .options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .library-option img{
+    height: 1.25rem;
+    width: 1.25 rem;
+ }
+
+ .icons{
+    font-size: 1.2rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+    
+ }
+ .icons:hover{
+    opacity: 1;
+ }
+
+ .box{
+    height: 8rem;
+    background-color: #1f1f1f;
+    border-radius: 0.6rem;
+    margin: 1rem 0 2rem 0;
+    padding: 0.5rem 1rem;
+ }
+ .box-p1{
+    font-size: 0.9rem;
+    font-weight: 700;
+ }
+ .box-p2{
+    font-size: 0.75rem;
+    font-weight: 500;
+ }
+ .badge{
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    color: black;
+    width: fit-content;
+    height: 2.3rem;
+    padding: 0.25rem 1rem;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 0.5rem;
+ }
+ .sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+ }
+
+ .sticky-nav img{
+    height: 1rem;
+    width: 1rem;
+    margin-left: 0.7rem;
+ }
+
+ .sticky-nav-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .sticky-nav-icons button{
+    margin-left: 1rem;
+ }
+ .sticky-nav-icons i{
+    margin: 0 1rem 0 1rem;
+ }
+ .black{
+    background-color: black;
+    color: white;
+    width: fit-content;
+ }
+.logo{
+    height: 2.1rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    line-height: 2.5rem;
+    margin: 0.5rem 0 0.6rem 1rem;
+}
+/* .nav-option{
+    line-height: 2.5rem;
+    background-color: #121212;
+    opacity: 0.7;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+} */
+    @media (max-width:1000px){
+        .hide-hone-wale{
+            display: none;
+        }
+    }
+    .card{
+        background-color: #232323;
+        width: 170px;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-left: 1.5rem;
+        margin-top:1rem;
+        overflow: auto;
+
+    }
+    .cards-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .card-title{
+        font-weight: 700;
+    }
+    .card-info{
+        opacity: 0.5;
+        font-size: 0.85rem;
+    }
+    .footer{
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+    .line{
+        width: 90%;
+        height: 40%;
+        border-top: 1px solid white ;
+        opacity: 0.5;
+
+    }
+
+    .left-player{
+        width: 20rem;
+        height: 4rem;
+        display: flex;
+        margin: 12px 0 2px 3px;
+    }
+    .bandana{
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 4px;
+        align-self: center;
+        margin-bottom: 0.7rem;
+    }
+    .title{
+        font-size: 0.7rem;
+        width: 51.65px;
+        height: 17.6px;
+        font-weight: 600;
+        background-color: black;
+    }
+    .artist{
+        width: 2.2rem;
+        height: 0.8rem;
+        font-size: 10px;
+        background-color: black;
+        opacity: 0.6;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        /* height: 1.8rem; */
+        width: fit-content;
+        padding-left : 1.3rem;
+        align-self: center;
+    }
+    .ic{
+        height: fit-content;
+        width: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        margin-left: 1.3rem;
+    }
+
+    .music-player{
+        background-color: black;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 5.5rem;
+        display: flex;        
+    }
+    .mid-player{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 3.6rem;
+        width: 32rem;
+        align-items: center;
+        /* justify-content: center;  */
+        margin-top: 0.5rem ;
+        /* justify-self: center; */
+     }
+     .one{
+        height: 1rem;
+        width: 1rem;
+        opacity: 0.6;
+     }
+     .two{
+        height: 1rem;
+        width: 1rem;
+        padding: 0 2rem 0 2rem;
+        opacity: 0.6;
+     }
+     .center{
+        height: 2rem;
+        width: auto;
+        align-self: center;
+     }
+
+     .upper-player{
+        display: flex;
+        padding: 1rem 0 1rem 0;
+     }
+    
+    .lower-player {
+        width: 25.7rem;
+        height: 5px;
+        background-color: #404040;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 10px;
+    }
+    
+    .seek-bar {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .progress {
+        width: 25%;
+        height: 100%;
+        background-color: white;
+    }
+
+
+    /* Right */
+.sound-bar {
+    position: relative;
+    width: 9rem;
+    height: 4px;
+    background-color: #404040;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.sound-bar-background {
+    position: absolute;
+    height: 100%;
+    background-color: #404040;
+}
+
+.sound-bar-fill {
+    position: absolute;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.right-player{
+    width: 20rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3rem;
+}
+.right-player i{
+    padding: 0.5rem;
+    
+}
+
+.green{
+    color: rgb(5, 144, 5);
+}
+.mic{
+    opacity: 0.6;
+}
+.ser{
+    opacity: 0.6;
+}
